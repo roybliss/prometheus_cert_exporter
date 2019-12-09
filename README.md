@@ -22,7 +22,7 @@ help:
 
 ### Domain/SSL host
 
-You need to configure your target domains/hosts in host.ini fist like this below(default path：config/host.ini):
+You need to configure your target domains/hosts in host.ini fist like this below(default path：/config/host.ini):
 
 ```ini
 ;example hosts

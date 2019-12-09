@@ -54,7 +54,7 @@ labels：
 metrics will show EXPIRE_DAY like this:
 
 ```shell
-[root@centos-prometheus01 ~]# curl localhost:9602/metrics
+[root@centos01 ~]# curl localhost:9602/metrics
 # HELP EXPIRE_DAY remaining days of the host certificate.
 # TYPE EXPIRE_DAY gauge
 EXPIRE_DAY{expiry_date="2028-12-02 08:06:26",ssltype="domain",target="www.example.com:443"} 3281.0

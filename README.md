@@ -70,5 +70,5 @@ docker run -d \
     --name cert_exporter \
     -p 9602:9602 \
     -v /opt/cert_exporter/host.ini:/config/host.ini \
-    ca_exporter:1.0
+    cert_exporter:1.0
 ```

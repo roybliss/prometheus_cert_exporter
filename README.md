@@ -60,3 +60,15 @@ metrics will show EXPIRE_DAY like this:
 EXPIRE_DAY{expiry_date="2028-12-02 08:06:26",ssltype="domain",target="www.example.com:443"} 3281.0
 EXPIRE_DAY{expiry_date="2028-12-02 08:06:26",ssltype="sslport",target="19.168.1.130:9443"} 3281.0
 ```
+
+### dokcer run
+
+Please build docker image with [Dockerfile](https://github.com/roybliss/prometheus_cert_exporter/blob/master/Dockerfile) first, then run like this：
+
+```shell
+docker run -d \
+    --name cert_exporter \
+    -p 9602:9602 \
+    -v /opt/cert_exporter/host.ini:/config/host.ini \
+    ca_exporter:1.0
+```

@@ -22,7 +22,7 @@ host_file = '/config/host.ini'
 
 # Create metrics object
 EXPIRE_DAY = Gauge('EXPIRE_DAY','remaining days of the host certificate.', ['target', 'expiry_date', 'ssltype'])
-usage = '''Check host/domain SSL Certificaote Expire time
+usage = '''Check host/domain SSL Certificate Expire time
 Usage: cert_exporter.py -i <host> -p <port> -f <host.ini>
 help:
     -i,--interval       grab interval time(default:60 seconds)
